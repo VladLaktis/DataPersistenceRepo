@@ -92,3 +92,12 @@ Received Import Request.
 Start importing Assets/Bounce.physicMaterial using Guid(bc24b7fc41d5dfb4698e2ca16a37dfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1403efc6be2392189457ff26c5d74ba4') in 0.040493 seconds 
   Import took 0.044406 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 14513.251944 seconds.
+  path: Assets/Scenes/main.unity
+  artifactKey: Guid(78a510c781f19db4da14f78ebb30946a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/main.unity using Guid(78a510c781f19db4da14f78ebb30946a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e995457a0cc3240c5dbbb3c5378bbc7c') in 0.029258 seconds 
+  Import took 0.098733 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
