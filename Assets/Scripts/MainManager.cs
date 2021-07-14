@@ -40,7 +40,7 @@ public class MainManager : MonoBehaviour
         if(GameManager.gmInstance)
         {
             ScoreText.text = $"Score :{GameManager.gmInstance.playerName}: {m_Points}";
-            BestScoreText.text = "Best Score : " + GameManager.gmInstance.lastScorerName + " : " + GameManager.gmInstance.lastBestScore;
+            UpdateOnScreenBestScore();
         }
         
     }
@@ -50,6 +50,10 @@ public class MainManager : MonoBehaviour
         if(m_Points>GameManager.gmInstance.lastBestScore)
         {
             BestScoreText.text = "Best Score : " + GameManager.gmInstance.playerName + " : " + m_Points;
+        }
+        else
+        {
+            BestScoreText.text = "Best Score : " + GameManager.gmInstance.lastScorerName + " : " + GameManager.gmInstance.lastBestScore;
         }
     }
 

@@ -17,7 +17,7 @@ public class ScoreScreen : MonoBehaviour
         if(scoreText)
         {
             if (gm.currentBestScore > gm.lastBestScore)
-                scoreText.text = "CONGRATULATIONS "+gm.playerName+"! YOUR NEW BEST SCORE IS " + gm.currentBestScore;
+                scoreText.text = "CONGRATULATIONS "+gm.playerName.ToUpper()+"! YOUR NEW BEST SCORE IS " + gm.currentBestScore;
             else
                 scoreText.text = "Your score is " + gm.currentBestScore + ". BestScore is " + gm.lastBestScore;
         }
@@ -29,7 +29,7 @@ public class ScoreScreen : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             gm.UpdateLastHighScore();
-            gm.QuitGame();
+            gm.StartGame();
         }
     }
 }
